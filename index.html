@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FIFA x Eva Productions 2022</title>
+    <script src="js/SAT.js"></script>
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<div id = "container">
+ 
+
+
+    <div id ="startScreen">
+        <div id="title">FIFA 2022</div>
+        <div id="selectTeam">
+            Top Seeds Teams
+            <div id="ulLeft">
+                <ul id="left">
+                    <li value="1"> <img src="img/qat.jpg"> Qatar </li>
+                    <li value="2"> <img src="img/bra.jpg"> Brazil</li>
+                    <li value='3'> <img src="img/bel.jpg"> Belgium</li>
+                    <li value='4'> <img src="img/fra.jpg"> France</li>
+                    
+                
+                    <li value='5'> <img src="img/arg.jpg"> Argentina</li>
+                    <li value='6'> <img src="img/eng.jpg"> England</li>
+                    <li value='7'> <img src="img/esp.jpg"> Spain</li>
+                    <li value='8'> <img src="img/por.jpg"> Portugal</li>
+                </ul>
+            </div>
+            <div id="selections">
+            <label >Select Your Team</label>
+            <select id="ownTeam">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="Qatar">Qatar</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Belgium">Belgium</option>
+                <option value="France">France</option>
+                <option value="Argentina">Argentina</option>
+                <option value="England">England</option>
+                <option value="Spain">Spain</option>
+                <option value="Portugal">Portugal</option>
+                
+
+            </select>
+            <label>Select Your Opponent</label>
+            <select id="opponentTeam">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="Qatar">Qatar</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Belgium">Belgium</option>
+                <option value="France">France</option>
+                <option value="Argentina">Argentina</option>
+                <option value="England">England</option>
+                <option value="Spain">Spain</option>
+                <option value="Portugal">Portugal</option>
+                
+
+            </select>
+        </div>
+        </div>
+        
+        <button id="play" onclick="init()" disabled>PLAY</button>
+        <div id="alertMessage"><em>Please make your selection</em></div>
+        <br><br>
+        <img src="img/help.png" height="100" width="150" id="help">
+        <br>
+        <span id ="instructions">(Use left and right arrow keys to play)</span>
+        
+    </div>
+
+    <div id ="gameOverScreen">
+        <div id="title">FIFA 2022</div>
+        <button id="playagain" onclick="init()">PLAY AGAIN</button>
+        <button id="backHome" onclick="replaceDoc()">HOME  PAGE</button>
+        <br><br><br>
+    </div>
+
+
+    <canvas id="myCanvas" width="480" height="720"></canvas>
+    <div id="score">
+        <div id = "timer">
+            Time Left
+            <div id = "countdown">02:00</div>
+        </div>
+        <h3 id ="opponentName"></h3>
+        <div id="opponent">0</div>
+        <h3 id ="ownName"></h3>
+        <div id="own">0</div>
+        <div id ="status"></div>
+        
+    </div>
+    
+</div>
+<footer>
+    <hr>
+    &copy; FIFA x Eva Productions 2022 
+</footer>
+</body>
+<script src="js/soccor2022.js"></script>
+</html>
